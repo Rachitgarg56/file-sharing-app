@@ -1,0 +1,22 @@
+File Sharing App
+
+1. User will upload the file to our server. (POST http://localhost:8080/api/files/)
+    1. Upload File
+    2. Save details in db
+    3. Generate unique id for a file 
+2. Generate a shareable link. (GET http://localhost:8080/files/:uuid)
+3. Use the link to download the file. (GET http://localhost:8080/files/download/:uuid)
+4. Send downloadable links to email. (POST http://localhost:8080/api/files/send)
+
+
+Multer:
+1. Creating a multer instance
+2. Create a configuration object
+3. Use the function / instance to upload the file
+
+Where to save the file? (Location)
+How many files to upload? (Single/Multiple)
+File validations?
+    Required
+    Size
+    Extensions 
